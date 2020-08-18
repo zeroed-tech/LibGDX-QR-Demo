@@ -47,6 +47,8 @@ project(":desktop") {
         implementation project(":core")
         api "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
         api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        compile "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+
     }
 }
 
@@ -65,6 +67,13 @@ project(":android") {
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86_64"
 
         api 'com.github.zeroed-tech.LibGDX-QR:AndroidNative:master-SNAPSHOT'
+
+        compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+        natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-armeabi"
+        natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-armeabi-v7a"
+        natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-arm64-v8a"
+        natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-x86"
+        natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-x86_64"
     }
 }
 
@@ -79,6 +88,9 @@ project(":ios") {
         api "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
         api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
         api 'com.github.zeroed-tech.LibGDX-QR:IOSNative:master-SNAPSHOT'
+
+        compile "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-ios"
+
     }
 }
 
@@ -90,5 +102,7 @@ project(":core") {
         api "com.badlogicgames.gdx:gdx:$gdxVersion"
         api 'com.github.zeroed-tech.LibGDX-QR:core:master-SNAPSHOT'
         compile "com.kotcrab.vis:vis-ui:$visuiVersion"
+        compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+
     }
 }

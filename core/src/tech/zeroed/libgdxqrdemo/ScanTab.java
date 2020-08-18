@@ -22,7 +22,6 @@ public class ScanTab extends Tab implements Updatable{
         VisImageTextButton scan = new VisImageTextButton("Scan", new TextureRegionDrawable(QRCode.CreateGenerator().blockSize(1).generate("Zeored.tech")));
         final VisLabel statusLabel = new VisLabel("Scan Status: Waiting...");
         final VisTextArea response = new VisTextArea();
-        response.setDisabled(true);
 
         content.add(scan).pad(20, 20, 0, 20);
         content.add(statusLabel).pad(20, 0, 0, 20).growX().row();
