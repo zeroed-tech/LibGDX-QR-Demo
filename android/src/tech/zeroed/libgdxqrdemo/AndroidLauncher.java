@@ -6,7 +6,6 @@ import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import tech.zeroed.libgdxqr.AndroidQRCodeNativeInterface;
 import tech.zeroed.libgdxqr.QRCode;
-import tech.zeroed.libgdxqrdemo.LibGDXQRDemo;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override
